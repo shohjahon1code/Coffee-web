@@ -1,0 +1,267 @@
+/* section-hero */
+.hero {
+  width: 100%;
+  min-height: 600px;
+  padding: 117px 0px 117px 85px;
+  margin-bottom: 136px;
+  background-image: url("../images/hero-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  width: 493px;
+  margin-bottom: 32px;
+
+  font-size: 72px;
+  font-family: var(--secondary-font-family);
+  color: var(--secondary-text-color);
+  line-height: 72px;
+}
+
+.hero__text {
+  width: 445px;
+  margin-bottom: 56px;
+
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  line-height: 26px;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.hero__btn {
+  padding: 15px 31px;
+  border-radius: 6px;
+
+  background: #66d2cf;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  color: #fefcf7;
+  text-align: center;
+  text-decoration: none;
+
+  line-height: 25px;
+  transition: all 0.5s linear;
+}
+
+.hero__btn:hover {
+  box-shadow: 3px 3px 6px 6px rgba(211, 207, 207, 0.16);
+}
+.hero__btn:active {
+  background-color: rgb(107, 73, 73);
+}
+
+/* section-collection */
+.collection {
+  position: relative;
+  margin-bottom: 200px;
+
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.collection::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 196px;
+  top: -130px;
+
+  background-image: url("../images/collection-bg.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.collection__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection__img {
+  margin-bottom: 71px;
+}
+
+.collection__title {
+  margin-bottom: 24px;
+
+  font-family: var(--secondary-font-family);
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+
+  color: var(--primary-text-color);
+}
+
+.collection__discr {
+  width: 255px;
+
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 26px;
+}
+
+/* section-chooseus */
+
+.chooseus {
+  width: 100%;
+  min-height: 577px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: #2c343e;
+}
+
+.chooseus__title {
+  margin-bottom: 32px;
+
+  font-size: 40px;
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  line-height: 48px;
+
+  color: var(--secondary-text-color);
+}
+
+.chooseus__text {
+  width: 540px;
+  margin-bottom: 86px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #fefcf7;
+  text-align: center;
+  line-height: 26px;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.chooseus__preference {
+  width: 100%;
+  margin-bottom: -251px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.chooseus__items {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: #0e8784;
+  border-radius: 8px;
+}
+
+.chooseus__img {
+  margin-bottom: 56px;
+  margin-top: 72px;
+}
+
+.chooseus__items-title {
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  line-height: 32px;
+
+  color: var(--secondary-text-color);
+}
+
+.chooseus__items-text {
+  width: 255px;
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 16px;
+
+  text-align: center;
+  line-height: 26px;
+
+  color: var(--secondary-text-color);
+}
+
+/* section-works */
+
+.works {
+  margin-top: 351px;
+  margin-bottom: 200px;
+}
+
+.works__title {
+  margin-bottom: 82px;
+
+  font-size: 24px;
+  font-family: var(--secondary-font-family);
+  line-height: 32px;
+
+  color: #83888f;
+}
+
+.works__img {
+  margin-bottom: 66px;
+}
+
+.works__wrapper {
+  margin-bottom: 71px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.works__num {
+  margin-bottom: 38px;
+  display: block;
+  font-size: 72px;
+  font-family: var(--secondary-font-family);
+  line-height: 72px;
+
+  color: #fdd6ba;
+}
+
+.works__details-title {
+  width: 207px;
+  margin-bottom: 42px;
+
+  font-size: 32px;
+  font-family: var(--secondary-font-family);
+  line-height: 36px;
+
+  color: #333d4b;
+}
+
+.works__details-text {
+  width: 302px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--primary-text-color);
+}
+
+.works__btn {
+  padding: 15px 31px;
+  border-radius: 6px;
+
+  background: #66d2cf;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+  color: #fefcf7;
+}
