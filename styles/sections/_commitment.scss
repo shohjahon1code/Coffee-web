@@ -1,0 +1,37 @@
+.commitment {
+  margin-bottom: 168px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    color: $primary-text-color;
+
+    line-height: 48px;
+  }
+
+  &__text {
+    max-width: 540px;
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #333d4b;
+
+    mix-blend-mode: normal;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+}

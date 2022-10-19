@@ -1,0 +1,33 @@
+// general-css-codes
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font-family;
+}
+
+/* For optimisitio- SEO */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  clip: rect(0 0 0 0);
+}
+
+/* The code of making container */
+.container {
+  max-width: 1310px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}

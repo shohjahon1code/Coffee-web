@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/normalize/normalize.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/blocks/about.css" />
+    <link rel="stylesheet" href="../styles/main.min.css" />
     <title>About page</title>
   </head>
   <body>
@@ -33,17 +31,17 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <section class="section-hero container">
-        <h2 class="section-hero__title">About Us</h2>
-        <p class="section-hero__text">
+    <main class="main container">
+      <section class="hero hero--about">
+        <h2 class="hero__title hero__title--modify">About Us</h2>
+        <p class="hero__text hero__text--discr">
           Coffeeroasters began its journey of exotic discovery in 1999,
           highlighting stories of coffee from around the world. We have since
           been dedicated to bring the perfect cup - from bean to brew - in every
           shipment.
         </p>
       </section>
-      <section class="commitment container">
+      <section class="commitment">
         <img
           width="445"
           height="520"
@@ -68,7 +66,7 @@
           </p>
         </div>
       </section>
-      <section class="quality container">
+      <section class="quality">
         <div class="quality__details">
           <h2 class="quality__title">Uncompromising quality</h2>
           <p class="quality__text">
@@ -88,68 +86,70 @@
           class="quality__img"
         />
       </section>
-      <section class="headquarters container">
-        <h4 class="headquarters__title">Our headquarters</h4>
-        <div class="headquarters__wrapper">
-          <div class="headquarters__items">
-            <img
-              width="40"
-              height="49"
-              src="../images/svg/uk-logo.svg"
-              alt="the map of UK"
-              class="headquarters__img"
-            />
-            <h3 class="headquarters__items__title">United Kingdom</h3>
-            <ul class="headquarters__list">
-              <li class="headquarters__item">68 Asfordby Rd</li>
-              <li class="headquarters__item">Alcaston</li>
-              <li class="headquarters__item">SY6 1YA</li>
-              <li class="headquarters__item">+44 1241 918425</li>
-            </ul>
-          </div>
-          <div class="headquarters__items">
-            <img
-              width="40"
-              height="49"
-              src="../images/svg/canada-logo.svg"
-              alt="the map of UK"
-              class="headquarters__img"
-            />
-            <h3 class="headquarters__items__title">Canada</h3>
-            <ul class="headquarters__list">
-              <li class="headquarters__item">1528 Eglinton Avenue</li>
-              <li class="headquarters__item">Toronto</li>
-              <li class="headquarters__item">Ontario M4P 1A6</li>
-              <li class="headquarters__item">+1 416 485 2997</li>
-            </ul>
-          </div>
-          <div class="headquarters__items">
-            <img
-              width="40"
-              height="49"
-              src="../images/svg/australia-logo.svg"
-              alt="the map of UK"
-              class="headquarters__img"
-            />
-            <h3 class="headquarters__items__title">Australia</h3>
-            <ul class="headquarters__list">
-              <li class="headquarters__item">36 Swanston Street</li>
-              <li class="headquarters__item">Kewell</li>
-              <li class="headquarters__item">Victoria</li>
-              <li class="headquarters__item">+61 4 9928 3629</li>
-            </ul>
+      <section class="headquarters">
+        <div class="headquarters__div">
+          <h4 class="headquarters__title">Our headquarters</h4>
+          <div class="headquarters__wrapper">
+            <div class="headquarters__items">
+              <img
+                width="40"
+                height="49"
+                src="../images/svg/uk-logo.svg"
+                alt="the map of UK"
+                class="headquarters__img"
+              />
+              <h3 class="headquarters__items__title">United Kingdom</h3>
+              <ul class="headquarters__list">
+                <li class="headquarters__item">68 Asfordby Rd</li>
+                <li class="headquarters__item">Alcaston</li>
+                <li class="headquarters__item">SY6 1YA</li>
+                <li class="headquarters__item">+44 1241 918425</li>
+              </ul>
+            </div>
+            <div class="headquarters__items">
+              <img
+                width="40"
+                height="49"
+                src="../images/svg/canada-logo.svg"
+                alt="the map of UK"
+                class="headquarters__img"
+              />
+              <h3 class="headquarters__items__title">Canada</h3>
+              <ul class="headquarters__list">
+                <li class="headquarters__item">1528 Eglinton Avenue</li>
+                <li class="headquarters__item">Toronto</li>
+                <li class="headquarters__item">Ontario M4P 1A6</li>
+                <li class="headquarters__item">+1 416 485 2997</li>
+              </ul>
+            </div>
+            <div class="headquarters__items">
+              <img
+                width="40"
+                height="49"
+                src="../images/svg/australia-logo.svg"
+                alt="the map of UK"
+                class="headquarters__img"
+              />
+              <h3 class="headquarters__items__title">Australia</h3>
+              <ul class="headquarters__list">
+                <li class="headquarters__item">36 Swanston Street</li>
+                <li class="headquarters__item">Kewell</li>
+                <li class="headquarters__item">Victoria</li>
+                <li class="headquarters__item">+61 4 9928 3629</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer footer-mb container">
+    <footer class="footer footer--mb container">
       <div class="footer__wrapper">
         <a href="#!" class="footer__logo">
           <img src="../images/svg/footer-logo.svg" alt="footer logo" />
         </a>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#!">HOME</a>
+            <a class="footer__link" href="../index.html">HOME</a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="#!">ABOUT US</a>

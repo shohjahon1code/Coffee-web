@@ -1,0 +1,38 @@
+.quality {
+  min-height: 474px;
+  margin-bottom: 168px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+
+  background: $secondary-bg-color;
+  border-radius: 10px;
+
+  &__title {
+    margin-bottom: 32px;
+    font-family: $secondary-font-family;
+    font-size: 40px;
+
+    color: $secondary-text-color;
+    line-height: 48px;
+  }
+
+  &__text {
+    max-width: 540px;
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: $secondary-text-color;
+
+    mix-blend-mode: normal;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+
+  &__img {
+    margin-top: -88px;
+  }
+}

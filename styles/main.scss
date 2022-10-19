@@ -1,0 +1,21 @@
+// customize
+@import "./variables/variables";
+@import "./normalize/normalize";
+
+// general-css
+@import "./general-styles/general-styles";
+
+// fonts
+@import "./fonts/fonts";
+
+//sections
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/collection";
+@import "./sections/chooseus";
+@import "./sections/works";
+@import "./sections/commitment";
+@import "./sections/quality";
+@import "./sections/headquarters";
+
+@import "./sections/footer";

@@ -1,0 +1,52 @@
+.headquarters {
+  margin-bottom: 168px;
+
+  &__title {
+    margin-bottom: 72px;
+
+    font-family: $secondary-font-family;
+    font-size: 24px;
+    color: #83888f;
+
+    line-height: 32px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 95px;
+  }
+
+  &__items {
+    max-width: 285px;
+    width: 100%;
+  }
+
+  &__img {
+    margin-bottom: 45px;
+  }
+
+  &__items__title {
+    margin-bottom: 24px;
+
+    font-family: $secondary-font-family;
+    font-size: 32px;
+    line-height: 36px;
+
+    color: $primary-text-color;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: $primary-text-color;
+  }
+}

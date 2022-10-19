@@ -1,0 +1,51 @@
+.collection {
+  position: relative;
+  margin-bottom: 200px;
+
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 196px;
+    top: -130px;
+
+    background-image: url("../images/collection-bg.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    margin-bottom: 71px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    font-family: $secondary-font-family;
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+
+    color: $primary-text-color;
+  }
+
+  &__discr {
+    width: 255px;
+
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,46 @@
+.footer {
+  margin-bottom: 115px;
+  padding: 47px 85px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $secondary-bg-color;
+
+  &__wrapper {
+    display: flex;
+    gap: 103px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #83888f;
+  }
+
+  &__link:hover {
+    color: $secondary-text-color;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &--mb {
+    margin-bottom: 88px;
+  }
+}
