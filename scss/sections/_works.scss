@@ -4,6 +4,30 @@
   display: flex;
   justify-content: center;
 
+  &--subscribe {
+    margin-bottom: 168px;
+    margin-top: 0;
+    min-height: 653px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #293039;
+
+    .works__details-title {
+      font-family: $secondary-font-family;
+      font-size: 32px;
+
+      color: #fefcf7;
+      line-height: 36px;
+    }
+
+    .works__details-text {
+      font-size: 16px;
+
+      color: #fefcf7;
+      line-height: 26px;
+    }
+  }
+
   &__title {
     margin-bottom: 82px;
 
