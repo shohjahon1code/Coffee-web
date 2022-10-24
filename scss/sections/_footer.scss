@@ -59,6 +59,10 @@
 }
 
 @include media($sm) {
+  .footer {
+    margin-bottom: 72px;
+  }
+
   .footer__wrapper {
     margin-bottom: 48px;
   }
