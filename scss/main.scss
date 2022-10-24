@@ -5,8 +5,9 @@
 // general-css
 @import "./general-styles/general-styles";
 
-// fonts
-@import "./fonts/fonts";
+// roots
+@import "./layout/fonts";
+@import "./layout/root";
 
 //sections
 @import "./sections/template";

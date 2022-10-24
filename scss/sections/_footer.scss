@@ -44,3 +44,27 @@
     margin-bottom: 88px;
   }
 }
+
+@include media($lg) {
+  .footer {
+    flex-direction: column;
+
+    &__wrapper {
+      margin-bottom: 65px;
+
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+}
+
+@include media($sm) {
+  .footer__wrapper {
+    margin-bottom: 48px;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

@@ -1,6 +1,7 @@
 .collection {
   position: relative;
   margin-bottom: 200px;
+  margin-top: 136px;
 
   display: flex;
   justify-content: space-between;
@@ -10,7 +11,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 196px;
+    min-height: 196px;
     top: -130px;
 
     background-image: url("../images/collection-bg.png");
@@ -47,5 +48,58 @@
     font-weight: 400;
     text-align: center;
     line-height: 26px;
+  }
+}
+
+@include media($xl) {
+  .collection {
+    margin-top: 144px;
+    margin-bottom: 144px;
+
+    flex-direction: column;
+
+    &::before {
+      width: 100%;
+      background-size: contain;
+    }
+
+    &__items {
+      margin-bottom: 32px;
+
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
+    }
+
+    &__img {
+      margin-bottom: 0;
+    }
+
+    &__discr {
+      max-width: 282px;
+      width: 100%;
+    }
+  }
+}
+
+@include media($sm) {
+  .collection {
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+    &::before {
+      margin-bottom: 20px;
+      max-width: 375px;
+      width: 100%;
+      min-height: 72px;
+      top: -70px;
+    }
+
+    &__items {
+      margin-bottom: 48px;
+
+      flex-direction: column;
+    }
   }
 }

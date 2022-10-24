@@ -9,6 +9,7 @@
 
 body {
   font-family: $primary-font-family;
+  overflow-x: hidden;
 }
 
 /* For optimisitio- SEO */
@@ -25,9 +26,9 @@ body {
 
 /* The code of making container */
 .container {
-  max-width: 1310px;
+  max-width: 1320px;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 auto;
 }

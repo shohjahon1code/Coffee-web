@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 600px;
   padding: 117px 0px 117px 85px;
-  margin-bottom: 136px;
+  border-radius: 8px;
   background-image: url("../images/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,5 +105,76 @@
       background-color: rgb(107, 73, 73);
       transition: none;
     }
+  }
+}
+
+@include media($md) {
+  .hero {
+    padding: 104px 58px;
+    min-height: 500px;
+    background-position: center;
+
+    &__title {
+      margin-bottom: 24px;
+
+      max-width: 329px;
+      width: 100%;
+
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &__text {
+      max-width: 398px;
+      width: 100%;
+      margin-bottom: 40px;
+
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    &__btn {
+      background: #0e8784;
+      border-radius: 6px;
+    }
+  }
+}
+
+@include media($sm) {
+  .hero {
+    padding: 100px 24px;
+    background-position: center;
+
+    &__title {
+      max-width: 279px;
+      width: 100%;
+
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__text {
+      max-width: 279px;
+      width: 100%;
+
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@include media(376) {
+  .hero__title {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .hero__text {
+    margin-bottom: 25px;
+
+    font-size: 12px;
+    line-height: 20px;
   }
 }

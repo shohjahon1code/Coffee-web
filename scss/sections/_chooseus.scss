@@ -83,3 +83,90 @@
     margin-top: 72px;
   }
 }
+
+@include media($xl) {
+  .chooseus {
+    min-height: 573px;
+    &__title {
+      margin-bottom: 24px;
+      margin-top: 56px;
+
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    &__text {
+      margin-bottom: 70px;
+
+      max-width: 540px;
+      width: 100%;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    &__preference {
+      margin-bottom: -300px;
+      flex-direction: column;
+    }
+
+    &__items {
+      width: 85%;
+      min-height: 180px;
+
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      &-title {
+        text-align: start;
+      }
+
+      &-text {
+        max-width: 344px;
+        width: 100%;
+
+        margin-bottom: 0;
+        text-align: start;
+      }
+    }
+  }
+}
+
+@include media($sm) {
+  .chooseus {
+    min-height: 902px;
+
+    &__title {
+      margin-top: 64px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    &__text {
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 279px;
+      width: 100%;
+      min-height: 125px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    &__items {
+      min-height: 382px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &-title {
+        text-align: center;
+      }
+      &-text {
+        margin-bottom: 51px;
+        max-width: 212px;
+        width: 100%;
+      }
+    }
+  }
+}
