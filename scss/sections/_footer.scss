@@ -1,5 +1,4 @@
 .footer {
-  margin-bottom: 115px;
   padding: 47px 85px;
 
   display: flex;
@@ -39,10 +38,6 @@
     display: flex;
     gap: 24px;
   }
-
-  &--mb {
-    margin-bottom: 88px;
-  }
 }
 
 @include media($lg) {
@@ -50,23 +45,17 @@
     flex-direction: column;
 
     &__wrapper {
-      margin-bottom: 65px;
-
       flex-direction: column;
       gap: 32px;
+    }
+
+    &__list {
+      margin-bottom: 15px;
     }
   }
 }
 
 @include media($sm) {
-  .footer {
-    margin-bottom: 72px;
-  }
-
-  .footer__wrapper {
-    margin-bottom: 48px;
-  }
-
   .footer__list {
     flex-direction: column;
     gap: 24px;

@@ -12,6 +12,16 @@
     border-radius: 8px;
     background-color: #293039;
 
+    @include media($xl) {
+      margin-top: 0;
+    }
+
+    .works__div {
+      @include media($sm) {
+        padding-top: 80px;
+      }
+    }
+
     .works__details-title {
       font-family: $secondary-font-family;
       font-size: 32px;
@@ -25,6 +35,10 @@
 
       color: #fefcf7;
       line-height: 26px;
+
+      @include media($sm) {
+        padding: 5px;
+      }
     }
   }
 
@@ -46,6 +60,10 @@
     margin-bottom: 71px;
     display: flex;
     gap: 100px;
+
+    @include media($sm) {
+      margin-bottom: 0;
+    }
   }
 
   &__num {
@@ -97,7 +115,6 @@
 
 @include media($xl) {
   .works {
-    margin-top: 500px;
     margin-bottom: 144px;
     &__div {
       width: 100%;

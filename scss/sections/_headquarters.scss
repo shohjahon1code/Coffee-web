@@ -1,6 +1,10 @@
 .headquarters {
   margin-bottom: 168px;
 
+  @include media($md) {
+    margin-bottom: 144px;
+  }
+
   &__title {
     margin-bottom: 72px;
 
@@ -9,22 +13,45 @@
     color: #83888f;
 
     line-height: 32px;
+
+    @include media($sm) {
+      text-align: center;
+    }
   }
 
   &__wrapper {
     width: 100%;
     display: flex;
-    align-items: center;
     gap: 95px;
+
+    @include media($md) {
+      gap: 9px;
+    }
+    @include media($sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
+    }
   }
 
   &__items {
     max-width: 285px;
     width: 100%;
+
+    @include media($sm) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__img {
     margin-bottom: 45px;
+
+    @include media($md) {
+      margin-bottom: 40px;
+    }
   }
 
   &__items__title {
@@ -35,6 +62,12 @@
     line-height: 36px;
 
     color: $primary-text-color;
+
+    @include media($md) {
+      margin-bottom: 21px;
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 
   &__list {

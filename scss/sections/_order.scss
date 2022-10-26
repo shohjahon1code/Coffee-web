@@ -3,6 +3,16 @@
   justify-content: center;
   gap: 125px;
 
+  @include media(1100) {
+    gap: 80px;
+  }
+
+  &__left {
+    @include media($lg) {
+      display: none;
+    }
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -44,6 +54,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @include media($sm) {
+        align-items: flex-start;
+      }
     }
 
     &__title {
@@ -52,12 +66,32 @@
       color: #83888f;
 
       line-height: 48px;
+
+      @include media($md) {
+        font-size: 32px;
+        line-height: 48px;
+      }
+
+      @include media($sm) {
+        max-width: 240px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
 
     &__bottom {
       display: flex;
       align-items: center;
       gap: 23px;
+
+      @include media($md) {
+        gap: 10px;
+        justify-content: space-between;
+      }
+      @include media($sm) {
+        flex-direction: column;
+      }
     }
 
     &__card {
@@ -67,6 +101,17 @@
 
       transition: all 0.4s linear;
       cursor: pointer;
+
+      @include media($md) {
+        padding: 32px 26px;
+        max-width: 223px;
+        width: 100%;
+        min-height: 250px;
+      }
+      @include media($sm) {
+        max-width: 100%;
+        min-height: 140px;
+      }
 
       &--bg {
         background: #0e8784;
@@ -100,6 +145,11 @@
 
       color: $primary-text-color;
       line-height: 32px;
+
+      @include media($md) {
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
 
     &__descr {
@@ -111,6 +161,15 @@
 
       color: #333d4b;
       line-height: 26px;
+
+      @include media($md) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      @include media($sm) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -118,6 +177,10 @@
     padding: 27px 64px;
     background: #2c343e;
     border-radius: 10px;
+
+    @include media($sm) {
+      padding: 32px 24px;
+    }
 
     &__subtitle {
       margin-bottom: 8px;
@@ -155,6 +218,11 @@
 
     display: flex;
     justify-content: flex-end;
+
+    @include media($sm) {
+      margin-bottom: 100px;
+      justify-content: center;
+    }
   }
 
   &__right-btn {
